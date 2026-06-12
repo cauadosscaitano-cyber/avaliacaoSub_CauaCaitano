@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../midias/logo.png">
+    <title>HardTech</title>
+
+    <link rel="stylesheet" href="../estilos/contato.css">
+</head>
+<body>
+
+    <form id="formPagamento">
+
+    <h1>CONTATE-NOS:</h1>
+
+    <section class="card">
+        <input type="text" id="nome" required><label for="nome">Nome*</label>
+        <input type="email" id="email" required><label for="email">E-mail*</label>
+        <input type="tel" id="telefone" required><label for="telefone">Telefone</label>
+        <input type="text" id="endereco" required><label for="endereco">Endereço</label>
+        <input type="date" id="dataNasc" required><label for="dataNasc">Data de Nascimento</label>
+        
+        <select id="assunto" name="assunto" required>
+                <option value="#">Selecione onde</option>
+                <option value="Amigos">Amigos</option>
+                <option value="Internet">Internet</option>
+        </select>
+        <label for="assunto">Onde nos conheceu?*</label>
+        
+        <textarea id="mensagem" name="mensagem" required maxlength="1000"></textarea>
+        <label for="mensagem">Mensagem *</label>
+
+        <input type="checkbox" id="Deseja" name="Deseja"><label for="Deseja">Deseja receber novidades?</label>
+        
+        <button type="submit">Enviar</button>
+    </section>
+
+    </form>
+
+    <section id="confirmacao">
+
+    <h2>CONFIRMAÇÃO DOS DADOS</h2>
+
+    <p><strong>Nome:</strong>
+        <span id="resNome"></span></p>
+
+    <p><strong>E-mail:</strong>
+        <span id="resEmail"></span></p>
+
+    <p><strong>Telefone:</strong>
+        <span id="resTelefone"></span></p>
+
+    <p><strong>Data de Nascimento</strong>
+        <span id="resDataNac"></span></p>
+    
+    <p><strong>Onde nos conheceu:</strong>
+        <span id="resOnde"></span></p>
+    
+    <p><strong>Mensagem:</strong>
+        <span id="resMensagem"></span></p>
+
+    <button onclick="enviarCompra()">
+        Finalizar Pedido
+    </button>
+
+</section>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
